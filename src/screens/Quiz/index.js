@@ -25,11 +25,11 @@ function ResultWidget({ results }) {
 
       <Widget.Content>
         <p>
-          Você acertou
+          Você obteve
           {' '}
-          {results.filter((value) => value).length}
+          {results.filter((value) => value).length * 100}
           {' '}
-          perguntas
+          pontos!
         </p>
         <ol>
           {results.map((result, index) => (
