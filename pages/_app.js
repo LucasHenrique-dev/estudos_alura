@@ -35,11 +35,11 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <meta property="og:title" content="Quiz Games da Imersão React da Alura" />
+        <meta property="og:title" content="Hunter Quiz" />
         <meta property="og:site_name" content="Quiz Games" />
-        <meta property="og:description" content="Projeto da Imersão Alura, um quiz sobre Games" />
-        <meta property="og:url" content="https://quiz-games.gabrielwolf-dev.vercel.app/" />
-        <meta property="og:image" content="https://cdn.pixabay.com/photo/2018/09/05/06/19/signal-3655575_960_720.png" />
+        <meta property="og:description" content="Projeto realizado durante a Imersão React Next JS da Alura" />
+        <meta property="og:url" content="https://hackquiz.lucashenrique-dev.vercel.app/" />
+        <meta property="og:image" content="https://i.imgur.com/CxcOAi8.jpg" />
         <meta property="og:image:type" content="image/png" />
 
         <link id="favicon" rel="icon" type="image/x-icon" href="https://i.imgur.com/fQYeuhw.png" />
