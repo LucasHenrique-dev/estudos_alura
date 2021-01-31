@@ -42,7 +42,7 @@ export default function App({ Component, pageProps }) {
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://hackquiz.lucashenrique-dev.vercel.app/" />
         <meta property="og:title" content="Hunter Quiz" />
-        <meta property="og:description" content="Projeto realizado durante a Imersão React Next JS da Alura." />
+        <meta property="og:description" content="Projeto realizado durante a Imersão React Next JS da Alura, um quiz para testar seu conhecimento sobre o mundo de Hunter x Hunter." />
         <meta property="og:image" content="https://i.imgur.com/CxcOAi8.jpg" />
 
         <meta property="twitter:card" content="summary_large_image" />
