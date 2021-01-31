@@ -35,12 +35,21 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <meta property="og:title" content="Hunter Quiz" />
-        <meta property="og:site_name" content="Quiz Games" />
-        <meta property="og:description" content="Projeto realizado durante a Imersão React Next JS da Alura" />
+        <title>Hunter Quiz</title>
+        <meta name="title" content="Hunter Quiz" />
+        <meta name="description" content="Projeto realizado durante a Imersão React Next JS da Alura." />
+
+        <meta property="og:type" content="website" />
         <meta property="og:url" content="https://hackquiz.lucashenrique-dev.vercel.app/" />
+        <meta property="og:title" content="Hunter Quiz" />
+        <meta property="og:description" content="Projeto realizado durante a Imersão React Next JS da Alura." />
         <meta property="og:image" content="https://i.imgur.com/CxcOAi8.jpg" />
-        <meta property="og:image:type" content="image/png" />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://hackquiz.lucashenrique-dev.vercel.app/" />
+        <meta property="twitter:title" content="Hunter Quiz" />
+        <meta property="twitter:description" content="Projeto realizado durante a Imersão React Next JS da Alura." />
+        <meta property="twitter:image" content="https://i.imgur.com/CxcOAi8.jpg" />
 
         <link id="favicon" rel="icon" type="image/x-icon" href="https://i.imgur.com/fQYeuhw.png" />
 

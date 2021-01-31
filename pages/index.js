@@ -2,7 +2,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { motion } from 'framer-motion';
 
@@ -40,13 +39,6 @@ export default function Home() {
 
   return (
     <QuizBackground backgroundImage={db.bg}>
-      <Head>
-        <meta property="og:image" content="www.meusite.com.br/imagem.jpg" />
-        <title>
-          AluraQuiz -
-          {db.title}
-        </title>
-      </Head>
       <QuizContainer>
         <QuizLogo />
         <Widget
