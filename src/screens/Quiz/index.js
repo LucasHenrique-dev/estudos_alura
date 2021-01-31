@@ -1,8 +1,12 @@
 /* eslint-disable linebreak-style */
+/* eslint-disable react/no-array-index-key */
 /* eslint-disable react/prop-types */
 import React from 'react';
 
 // import db from '../../../db.json';
+import { Lottie } from '@crello/react-lottie';
+import loadingAnimation from '../animations/loading.json';
+
 import Widget from '../../components/Widget';
 import QuizLogo from '../../components/QuizLogo';
 import QuizBackground from '../../components/QuizBackground';
@@ -28,8 +32,8 @@ function ResultWidget({ results }) {
           perguntas
         </p>
         <ol>
-          {results.map((result) => (
-            <li key={`result__${result}`}>
+          {results.map((result, index) => (
+            <li key={`result__${index}`}>
               Resultado:
               {result === true
                 ? ' Acertou'
@@ -51,8 +55,13 @@ function LoadingWidget() {
         Carregando...
       </Widget.Header>
 
-      <Widget.Content>
-        [Desafio do Loading]
+      <Widget.Content style={{ display: 'flex', justifyContent: 'center' }}>
+        <Lottie
+          width="200px"
+          height="200px"
+          className="lottie-container basic"
+          config={{ animationData: loadingAnimation, loop: true, autoplay: true }}
+        />
       </Widget.Content>
     </Widget>
   );
@@ -93,9 +102,9 @@ function QuestionWidget({
         <h2>
           {question.title}
         </h2>
-        <p>
-          {question.description}
-        </p>
+        {/* <p>
+          {question.description} para reabilitar é necessário ir em db.json e por "description": ...
+        </p> */}
 
         <AlternativesForm
           onSubmit={(infosDoEvento) => {
@@ -103,9 +112,9 @@ function QuestionWidget({
             setIsQuestionSubmited(true);
             setTimeout(() => {
               addResult(isCorrect);
-              onSubmit();
               setIsQuestionSubmited(false);
               setSelectedAlternative(undefined);
+              onSubmit();
             }, 3 * 1000);
           }}
         >

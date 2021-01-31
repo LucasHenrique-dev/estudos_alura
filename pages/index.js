@@ -41,6 +41,7 @@ export default function Home() {
   return (
     <QuizBackground backgroundImage={db.bg}>
       <Head>
+        <meta property="og:image" content="www.meusite.com.br/imagem.jpg" />
         <title>
           AluraQuiz -
           {db.title}
@@ -74,7 +75,10 @@ export default function Home() {
                 placeholder="Inscreva-se com o Nome:"
                 value={name}
               />
-              <Button type="submit" disabled={name.length === 0}>
+              <Button
+                type="submit"
+                disabled={name.length === 0}
+              >
                 {name.length === 0 && 'Jogar'}
                 {name.length !== 0 && `Hunter ${name}`}
               </Button>
