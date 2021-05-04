@@ -1,2 +1,2 @@
 # estudos_alura
- Sessao dedicada aos assuntos relacionados à Alura
+ Sessão dedicada aos assuntos relacionados à Alura
