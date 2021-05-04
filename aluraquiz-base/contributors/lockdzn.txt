@@ -1,2 +1,0 @@
-LockDzn
-https://quiz-csgo-alura.lockdzn.vercel.app
