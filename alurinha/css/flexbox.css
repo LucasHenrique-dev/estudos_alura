@@ -25,6 +25,25 @@
     margin-left: 0px;
 }
 
+.videoSobre .container {
+    display: flex;
+}
+
+.videoSobre-video {
+    flex-grow: 1;
+}
+
+.videoSobre-sobre {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 3;
+}
+
+.videoSobre-sobre-list {
+    flex-grow: 1;
+}
+
 .rodapePrincipal-navMap-list {
     display: flex;
     flex-direction: column;
@@ -64,6 +83,10 @@
         flex-direction: column;
         text-align: center;
     }
+
+    .cabecalhoPrincipal-nav-link-app {
+        order: -1;
+    }
     
     .conteudoPrincipal-cursos {
         flex-direction: column;
@@ -72,6 +95,15 @@
     .conteudoPrincipal-cursos-link {
         width: 100%;
         margin: 1% 0;;
+    }
+
+    .videoSobre .container {
+        flex-direction: column;
+    }
+
+    .videoSobre-video {
+        margin: 1em auto;
+        flex-shrink: 2;
     }
 
     .rodapePrincipal-navMap-list {
