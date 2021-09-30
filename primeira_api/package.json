@@ -4,8 +4,24 @@
   "description": "Projeto de estudos sobre Node Js para criação de uma API, baseado nas aulas da Alura",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Lucas Henrique",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LucasHenrique-dev/estudos_alura.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LucasHenrique-dev/estudos_alura/issues"
+  },
+  "homepage": "https://github.com/LucasHenrique-dev/estudos_alura#readme",
+  "dependencies": {
+    "consign": "^0.1.6",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  }
 }
