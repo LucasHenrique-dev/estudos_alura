@@ -1,0 +1,11 @@
+{
+  "name": "projeto-nodejs-rest",
+  "version": "1.0.0",
+  "description": "Projeto de estudos sobre Node Js para criação de uma API, baseado nas aulas da Alura",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lucas Henrique",
+  "license": "ISC"
+}
